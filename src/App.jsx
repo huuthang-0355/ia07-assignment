@@ -18,7 +18,10 @@ function App() {
                         <Route path="/dashboard" element={<Dashboard />} />
                     </Route>
 
-                    <Route path="*" element={<Navigate to="/login" />} />
+                    <Route
+                        path="*"
+                        element={<Navigate to="/login" replace />}
+                    />
                 </Routes>
             </BrowserRouter>
         </QueryClientProvider>
